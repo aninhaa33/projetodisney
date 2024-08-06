@@ -1,0 +1,76 @@
+/* filme.css */
+
+body {
+  background: linear-gradient(to right, #001f3f, #003d66, #0073e6);
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 550px; /* Defina a altura do corpo para cobrir toda a janela */
+  position: relative; /* Define o corpo como posição relativa para posicionar a imagem fixa corretamente */
+}
+
+.background-image {
+  position: fixed;
+  bottom: 1px; /* Ajusta a distância do fundo conforme necessário */
+  right: 5px; /* Ajusta a distância da direita conforme necessário */
+  width: 550px; /* Ajusta o tamanho conforme necessário */
+  height: auto;
+  z-index: 1000; /* Garante que a imagem fique sobreposta ao conteúdo */
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.menu .card {
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px; /* Tamanho mínimo para os cards */
+  text-align: center;
+  font-size: 18px; /* Tamanho da fonte dos cards */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu .card:hover {
+  transform: translateY(-10px);
+  background-color: #0056b3;
+}
+
+.menu .card.active {
+  background-color: #0056b3;
+}
+
+.card-filme {
+  display: flex;
+  align-items: center; /* Alinha verticalmente os elementos */
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px; /* Espaçamento entre os cards de filme */
+  box-shadow: 0 2px 5px rgba(0, 0)
+}
